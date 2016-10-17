@@ -28,14 +28,11 @@ class Clock():
         while hr < 0:
             hr = hr + 24
 
-        if hr % 24 == 0:
-            hr = 0
-
-        if hr > 24:
+        if hr >= 24:
             hr = hr % 24
 
         seconds = hr * 60 * 60
-        seconds +=  minutes* 60
+        seconds += minutes * 60
         self.timeInSeconds = seconds
 
 
