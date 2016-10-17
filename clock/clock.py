@@ -9,6 +9,8 @@ class Clock():
         self.minutes = minutes
         self.timeInSeconds = None
         self.time = None
+        self.calcTime()
+
 
     def calcTime(self):
         hr = self.hr
@@ -48,5 +50,4 @@ class Clock():
             return False
 
     def __repr__(self):
-        self.calcTime()
         return time.strftime("%H:%M", time.gmtime(self.timeInSeconds))
