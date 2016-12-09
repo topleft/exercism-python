@@ -37,9 +37,9 @@ class PangramTests(unittest.TestCase):
     def test_mixedcase_and_punctuation(self):
         self.assertTrue(is_pangram('"Five quacking Zephyrs jolt my wax bed."'))
 
-    def test_unchecked_german_umlaute(self):
-        self.assertTrue(is_pangram('Victor jagt zwölf Boxkämpfer quer über den'
-                                   ' großen Sylter Deich.'))
+    # def test_unchecked_german_umlaute(self):
+    #     self.assertTrue(is_pangram('Victor jagt zwölf Boxkämpfer quer über den'
+    #                                ' großen Sylter Deich.'))
 
 
 if __name__ == '__main__':
