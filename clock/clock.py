@@ -22,8 +22,9 @@ class Clock():
             minutes = minutes + 60
 
         if minutes >= 60:
-            hourAdjustment = int(math.floor(minutes/60))
-            minutes = minutes % 60
+            remainder = minutes % 60
+            hourAdjustment = (minutes - remainder) / 60
+            minutes = remainder
 
         hr += hourAdjustment
 
